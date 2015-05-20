@@ -1,1 +1,3 @@
 # BecoWebSite
+
+- bower install
