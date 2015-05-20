@@ -1,0 +1,9 @@
+{
+    "name": "Beco",
+    "version": "0.0.1",
+    "dependencies": {
+        "fakeloader": "*",
+        "jquery": "~2.0.2",
+        "bootstrap": "*"
+    }
+}
