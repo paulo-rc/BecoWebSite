@@ -26,27 +26,28 @@
         }, options);
 
         //Customized Spinners
-        var spinner01_00 = '<div class="fl spinner1"><img class="logo" src="'+settings.imagePath+'" style="max-width: '+settings.maxWidth+'">';
+        var bubbles = '<div id="bubbles"><div class="bubble x1"></div><div class="bubble x2"></div><div class="bubble x3"></div><div class="bubble x4"></div><div class="bubble x5"></div><div class="bubble x6"></div><div class="bubble x7"></div><div class="bubble x8"></div><div class="bubble x9"></div><div class="bubble x10"></div></div>';
+        var spinner01_00 = '<div class="fl spinner1"><img class="logo" src="'+settings.imagePath+'">';
         var spinner01_01 = '<div class="double-bounce1"></div><div class="double-bounce2"></div></div>';
         var spinner01 = spinner01_00+spinner01_01;
-        var spinner02_00 = '<div class="fl spinner2"><img class="logo" src="'+settings.imagePath+'" style="max-width: '+settings.maxWidth+'">';
+        var spinner02_00 = '<div class="fl spinner2"><img class="logo" src="'+settings.imagePath+'">';
         var spinner02_01 = '<div class="spinner-container container1"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div><div class="spinner-container container2"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div><div class="spinner-container container3"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div></div>';
         var spinner02 = spinner02_00+spinner02_01;
-        var spinner03_00 = '<div class="fl spinner3"><img class="logo" src="'+settings.imagePath+'" style="max-width: '+settings.maxWidth+'">';
+        var spinner03_00 = '<div class="fl spinner3"><img class="logo" src="'+settings.imagePath+'">';
         var spinner03_01 = '<div class="dot1"></div><div class="dot2"></div></div>';
         var spinner03 = spinner03_00+spinner03_01;
-        var spinner04_00 = '<div class="fl spinner4"><img class="logo" src="'+settings.imagePath+'" style="max-width: '+settings.maxWidth+'">';
+        var spinner04_00 = '<div class="fl spinner4"><img class="logo" src="'+settings.imagePath+'">';
         var spinner04_01 = '</div>';
         var spinner04 = spinner04_00+spinner04_01;
-        var spinner05_00 = '<div class="fl spinner5"><img class="logo" src="'+settings.imagePath+'" style="max-width: '+settings.maxWidth+'">';
+        var spinner05_00 = '<div class="fl spinner5"><img class="logo" src="'+settings.imagePath+'">';
         var spinner05_01 = '<div class="cube1"></div><div class="cube2"></div></div>';
         var spinner05 = spinner05_00+spinner05_01;
-        var spinner06_00 = '<div class="fl spinner6"><img class="logo" src="'+settings.imagePath+'" style="max-width: '+settings.maxWidth+'">';
+        var spinner06_00 = '<div class="fl spinner6"><img class="logo" src="'+settings.imagePath+'">';
         var spinner06_01 = '<div class="rect1"></div><div class="rect2"></div><div class="rect3"></div><div class="rect4"></div><div class="rect5"></div></div>';
         var spinner06 = spinner06_00+spinner06_01;
-        var spinner07_00 = '<div class="fl spinner7"><img class="logo img-responsive" src="'+settings.imagePath+'" style="max-width: '+settings.maxWidth+'">';
-        var spinner07_01 = '<div class="circ1"></div><div class="circ2"></div><div class="circ3"></div><div class="circ4"></div></div>';
-        var spinner07 = spinner07_00+spinner07_01;
+        var spinner07_00 = '<div class="fl spinner7"><img class="logo img-responsive" src="'+settings.imagePath+'">';
+        var spinner07_01= '<div class="circ1"></div><div class="circ2"></div><div class="circ3"></div><div class="circ4"></div></div>';
+        var spinner07 = bubbles+spinner07_00+spinner07_01;
 
         //The target
         var el = $(this);
@@ -96,7 +97,7 @@
                 //Add customized loader image
 
                 /*if (settings.imagePath !='') {
-                    el.html('<div class="fl"><img class="logo" src="'+settings.imagePath+'" style="max-width: '+settings.maxWidth+'"><div class="double-bounce1"></div><div class="double-bounce2"></div></div>');
+                    el.html('<div class="fl"><img class="logo" src="'+settings.imagePath+'"><div class="double-bounce1"></div><div class="double-bounce2"></div></div>');
                 }*/
                 centerLoader();
         });
@@ -122,10 +123,10 @@
             var winH = $(window).height();
 
             var spinnerW = $('.fl').outerWidth();
-            var spinnerH = $('.fl').outerHeight()-130;
+            var spinnerH = $('.fl').outerHeight()-180;
 
             var logoW = $('.logo').outerWidth();
-            var logoH = $('.logo').outerWidth()-130;
+            var logoH = $('.logo').outerWidth()-180;
 
             $('.fl').css({
                 'position':'absolute',
@@ -133,7 +134,6 @@
                 'top':(winH/2)-(spinnerH/2)
             });
             $('.fl .logo').css({
-                'position':'fixed',
                 'left':(winW/2)-(logoW/2),
                 'top':(winH/2)-(logoH/2)
             });
