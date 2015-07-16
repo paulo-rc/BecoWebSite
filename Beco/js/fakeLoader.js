@@ -45,7 +45,7 @@
         var spinner06_00 = '<div class="fl spinner6"><img class="logo" src="'+settings.imagePath+'">';
         var spinner06_01 = '<div class="rect1"></div><div class="rect2"></div><div class="rect3"></div><div class="rect4"></div><div class="rect5"></div></div>';
         var spinner06 = spinner06_00+spinner06_01;
-        var spinner07_00 = '<div class="fl spinner7"><img class="logo img-responsive" src="'+settings.imagePath+'">';
+        var spinner07_00 = '<div class="fl spinner7"><img id="logo" class="logo img-responsive" src="'+settings.imagePath+'">';
         var spinner07_01= '<div class="circ1"></div><div class="circ2"></div><div class="circ3"></div><div class="circ4"></div></div>';
         var spinner07 = bubbles+spinner07_00+spinner07_01;
 

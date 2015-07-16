@@ -1,1 +1,347 @@
-.starter-template{padding:40px 15px;text-align:center}.spinner7 .circ1{background-color:lightblue}.spinner7 .circ2{background-color:yellow}.spinner7 .circ3{background-color:red}.spinner7 .circ4{background-color:green}
+body .container {
+  width: 65%;
+}
+body .main-logo {
+  position: relative;
+  width: 200px;
+  height: 90px;
+  margin-top: 1em;
+  background-image: url('../img/BecoLogo.png');
+  background-size: cover;
+}
+body #myCarousel {
+  height: 35em;
+}
+body #myCarousel p {
+  color: black;
+}
+body #myCarousel .carousel-caption {
+  top: 15px;
+  bottom: 0px;
+  text-align: left;
+  color: #005cad;
+  padding-top: 0px;
+  text-shadow: none;
+}
+body #myCarousel .carousel-caption h1 {
+  margin-top: 0px;
+}
+body #myCarousel .carousel-caption h2 {
+  font-weight: normal;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+body #myCarousel .carousel-caption p {
+  color: #005cad;
+}
+body #myCarousel .carousel-indicators li {
+  width: 3em;
+  height: 3em;
+  background-color: white;
+  border-radius: 100%;
+  text-indent: 0;
+  line-height: 17px;
+  border: 2px solid;
+}
+body #myCarousel span.text-indicator {
+  font-size: 11px;
+  display: block;
+  padding-top: 4px;
+}
+body #myCarousel span.age-indicator {
+  font-weight: 900;
+  font-size: 18px;
+}
+body .container.head {
+  font-size: 12px;
+  width: 85%;
+}
+body .container.head .masthead nav .nav-justified {
+  max-height: 200px;
+  /*li:first-child {
+            a {
+              font-size: 11px;
+              border-bottom-left-radius: 500px;
+              color: transparent;
+              padding: 11px 0 0 0;
+              cursor: default;
+            }
+          }
+          li:last-child {
+            a {
+              font-size: 11px;
+              border-bottom-right-radius: 500px;
+              color: transparent;
+              padding: 11px 0 0 0;
+              cursor: default;
+            }
+          }*/
+}
+body .container.head .masthead nav .nav-justified li {
+  margin: 3px;
+}
+body .container.head .masthead nav .nav-justified li a {
+  padding-top: 17px;
+  padding-bottom: 8px;
+  margin-bottom: 0;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  background-color: #00458A;
+  border: 1px solid white;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+body .container.head .masthead nav .nav-justified li a:hover {
+  background-color: #00458A;
+}
+body .container.head .masthead nav .nav-justified .active a,
+body .container.head .masthead nav .nav-justified a:hover,
+body .container.head .masthead nav .nav-justified a:focus {
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15);
+}
+body .container.head .masthead nav ul > li .border-green {
+  border-bottom: 4px solid green;
+}
+body .container.head .masthead nav ul > li .border-yellow {
+  border-bottom: 4px solid yellow;
+}
+body .container.head .masthead nav ul > li .border-red {
+  border-bottom: 4px solid red;
+}
+body .container.head .masthead nav ul > li .border-skyblue {
+  border-bottom: 4px solid skyblue;
+}
+body .skyblue-text {
+  color: skyblue;
+}
+body .green-text {
+  color: green;
+}
+body .red-text {
+  color: red;
+}
+body .yellow-text {
+  color: #FBD400;
+}
+body li.green-border {
+  border-color: green;
+}
+body li.skyblue-border {
+  border-color: skyblue;
+}
+body li.red-border {
+  border-color: red;
+}
+body li.yellow-border {
+  border-color: #FBD400;
+}
+body .footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 40px;
+  border-top: 1px solid #eee;
+}
+@media (min-width: 768px) {
+  body .container.head {
+    width: 55%;
+  }
+  #myCarousel {
+    height: 35em;
+  }
+  #myCarousel .carousel-indicators li {
+    width: 6em !important;
+    height: 6em !important;
+    background-color: white;
+    border-radius: 100%;
+    text-indent: 0;
+    line-height: 17px;
+    border: 10px solid !important;
+  }
+  #myCarousel span.text-indicator {
+    font-size: inherit !important;
+    display: block;
+    padding-top: 4px;
+  }
+  #myCarousel span.age-indicator {
+    font-weight: 900;
+    font-size: 18px;
+  }
+}
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .masthead,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+.spinner7 .circ1 {
+  background-color: lightblue;
+}
+.spinner7 .circ2 {
+  background-color: yellow;
+}
+.spinner7 .circ3 {
+  background-color: red;
+}
+.spinner7 .circ4 {
+  background-color: green;
+}
+.logo {
+  position: fixed;
+  min-width: 280px;
+  max-width: 380px;
+}
+.bubble {
+  width: 100px;
+  height: 100px;
+  background: #ffb200;
+  border-radius: 200px;
+  -moz-border-radius: 200px;
+  -webkit-border-radius: 200px;
+  position: absolute;
+}
+.x1 {
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  transform: scale(0.9);
+  opacity: 0.2;
+  background: skyblue;
+  -webkit-animation: moveclouds 15s linear infinite, sideWaysL 4s ease-in-out infinite alternate;
+  -moz-animation: moveclouds 15s linear infinite, sideWaysL 4s ease-in-out infinite alternate;
+  -o-animation: moveclouds 15s linear infinite, sideWaysL 4s ease-in-out infinite alternate;
+}
+.x1:hover {
+  opacity: 0.8;
+}
+.x2 {
+  left: 200px;
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  transform: scale(0.6);
+  opacity: 0.5;
+  background: yellow;
+  -webkit-animation: moveclouds 25s linear infinite, sideWaysL 5s ease-in-out infinite alternate;
+  -moz-animation: moveclouds 25s linear infinite, sideWaysL 5s ease-in-out infinite alternate;
+  -o-animation: moveclouds 25s linear infinite, sideWaysL 5s ease-in-out infinite alternate;
+}
+.x2:hover {
+  opacity: 0.8;
+}
+.x3 {
+  left: 350px;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0.3;
+  background: red;
+  -webkit-animation: moveclouds 20s linear infinite, sideWaysL 4s ease-in-out infinite alternate;
+  -moz-animation: moveclouds 20s linear infinite, sideWaysL 4s ease-in-out infinite alternate;
+  -o-animation: moveclouds 20s linear infinite, sideWaysL 4s ease-in-out infinite alternate;
+}
+.x3:hover {
+  opacity: 0.8;
+}
+.x4 {
+  left: 470px;
+  -webkit-transform: scale(0.75);
+  -moz-transform: scale(0.75);
+  transform: scale(0.75);
+  opacity: 0.35;
+  background: green;
+  -webkit-animation: moveclouds 18s linear infinite, sideWaysL 2s ease-in-out infinite alternate;
+  -moz-animation: moveclouds 18s linear infinite, sideWaysL 2s ease-in-out infinite alternate;
+  -o-animation: moveclouds 18s linear infinite, sideWaysL 2s ease-in-out infinite alternate;
+}
+.x4:hover {
+  opacity: 0.8;
+}
+.x5 {
+  left: 150px;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0.3;
+  background: skyblue;
+  -webkit-animation: moveclouds 7s linear infinite, sideWaysL 1s ease-in-out infinite alternate;
+  -moz-animation: moveclouds 7s linear infinite, sideWaysL 1s ease-in-out infinite alternate;
+  -o-animation: moveclouds 7s linear infinite, sideWaysL 1s ease-in-out infinite alternate;
+}
+.x5:hover {
+  opacity: 0.8;
+}
+.x6 {
+  right: 0;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  transform: scale(0.9);
+  opacity: 0.2;
+  background: yellow;
+  -webkit-animation: moveclouds 15s linear infinite, sideWaysR 4s ease-in-out infinite alternate;
+  -moz-animation: moveclouds 15s linear infinite, sideWaysR 4s ease-in-out infinite alternate;
+  -o-animation: moveclouds 15s linear infinite, sideWaysR 4s ease-in-out infinite alternate;
+}
+.x6:hover {
+  opacity: 0.8;
+}
+.x7 {
+  right: 200px;
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  transform: scale(0.6);
+  opacity: 0.5;
+  background: red;
+  -webkit-animation: moveclouds 25s linear infinite, sideWaysR 5s ease-in-out infinite alternate;
+  -moz-animation: moveclouds 25s linear infinite, sideWaysR 5s ease-in-out infinite alternate;
+  -o-animation: moveclouds 25s linear infinite, sideWaysR 5s ease-in-out infinite alternate;
+}
+.x7:hover {
+  opacity: 0.8;
+}
+.x8 {
+  right: 350px;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0.3;
+  background: green;
+  -webkit-animation: moveclouds 20s linear infinite, sideWaysR 4s ease-in-out infinite alternate;
+  -moz-animation: moveclouds 20s linear infinite, sideWaysR 4s ease-in-out infinite alternate;
+  -o-animation: moveclouds 20s linear infinite, sideWaysR 4s ease-in-out infinite alternate;
+}
+.x8:hover {
+  opacity: 0.8;
+}
+.x9 {
+  right: 470px;
+  -webkit-transform: scale(0.75);
+  -moz-transform: scale(0.75);
+  transform: scale(0.75);
+  opacity: 0.35;
+  background: skyblue;
+  -webkit-animation: moveclouds 18s linear infinite, sideWaysR 2s ease-in-out infinite alternate;
+  -moz-animation: moveclouds 18s linear infinite, sideWaysR 2s ease-in-out infinite alternate;
+  -o-animation: moveclouds 18s linear infinite, sideWaysR 2s ease-in-out infinite alternate;
+}
+.x9:hover {
+  opacity: 0.8;
+}
+.x10 {
+  right: 150px;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0.3;
+  background: yellow;
+  -webkit-animation: moveclouds 7s linear infinite, sideWaysR 1s ease-in-out infinite alternate;
+  -moz-animation: moveclouds 7s linear infinite, sideWaysR 1s ease-in-out infinite alternate;
+  -o-animation: moveclouds 7s linear infinite, sideWaysR 1s ease-in-out infinite alternate;
+}
+.x10:hover {
+  opacity: 0.8;
+}
