@@ -1,7 +1,49 @@
 @blue-beco: #005CAD;
 @navbar-blue: #00458A;
+@gradient-back-bottom-from: #AEAEAE;
+@gradient-back-bottom-to: white;
+@dark-red: #D42023;
+@dark-yellow: #F9BC14;
+@dark-green: #00A03E;
+@dark-skyblue: #23AFE6;
+@shadow-active-li: 0px 0px 49px 6px;
+
+.gradient (@startColor: #eee, @endColor: white) {
+  background-color: @startColor;
+  background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+  background: -webkit-linear-gradient(top, @startColor, @endColor);
+  background: -moz-linear-gradient(top, @startColor, @endColor);
+  background: -ms-linear-gradient(top, @startColor, @endColor);
+  background: -o-linear-gradient(top, @startColor, @endColor);
+}
+
+.box-shadow (@size, @color) {
+  -webkit-box-shadow: @size @color;
+  -moz-box-shadow:    @size @color;
+  box-shadow:         @size @color;
+}
 
 body {
+  .body-top-middle-back {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 72%;
+    background-color: white;
+    z-index: -1;
+    border-bottom-left-radius: 100% 180px;
+    border-bottom-right-radius: 100% 180px;
+  }
+
+  .body-middle-bottom-back {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40%;
+    background-color: lightgray;
+    z-index: -2;
+    .gradient(@gradient-back-bottom-from, @gradient-back-bottom-to);
+  }
   .main-logo {
     position: relative;
     width: 200px;
@@ -11,7 +53,6 @@ body {
     background-size: cover;
   }
   #myCarousel {
-    height: 35em;
     p {
       color: black;
     }
@@ -34,14 +75,28 @@ body {
         color: @blue-beco;
       }
     }
-    .carousel-indicators li {
-      width: 4em;
-      height: 4em;
-      background-color: white;
-      border-radius: 100%;
-      text-indent: 0;
-      line-height: 13px;
-      border: 2px solid;
+    .carousel-indicators{
+      li {
+        width: 4em;
+        height: 4em;
+        background-color: white;
+        border-radius: 100%;
+        text-indent: 0;
+        line-height: 13px;
+        border: 2px solid;
+      }
+      li.active.skyblue {
+        .box-shadow(@shadow-active-li, @dark-skyblue);
+      }
+      li.active.green {
+        .box-shadow(@shadow-active-li, @dark-green);
+      }
+      li.active.red {
+        .box-shadow(@shadow-active-li, @dark-red);
+      }
+      li.active.yellow {
+        .box-shadow(@shadow-active-li, @dark-yellow);
+      }
     }
     span.text-indicator {
       font-size: 11px;
@@ -174,7 +229,7 @@ body {
         }
       }
     }
-    .back {
+    .nav-back {
       position: absolute;
       top: -41px;
       left: 12%;
@@ -186,7 +241,9 @@ body {
     }
   }
   #myCarousel {
-    height: 35em;
+    .item {
+      height: 35em;
+    }
     .carousel-indicators li {
       width: 7em !important;
       height: 7em !important;

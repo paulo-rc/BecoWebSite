@@ -1,3 +1,27 @@
+body .body-top-middle-back {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 72%;
+  background-color: white;
+  z-index: -1;
+  border-bottom-left-radius: 100% 180px;
+  border-bottom-right-radius: 100% 180px;
+}
+body .body-middle-bottom-back {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40%;
+  background-color: lightgray;
+  z-index: -2;
+  background-color: #aeaeae;
+  background: -webkit-gradient(linear, left top, left bottom, from(#aeaeae), to(white));
+  background: -webkit-linear-gradient(top, #aeaeae, white);
+  background: -moz-linear-gradient(top, #aeaeae, white);
+  background: -ms-linear-gradient(top, #aeaeae, white);
+  background: -o-linear-gradient(top, #aeaeae, white);
+}
 body .main-logo {
   position: relative;
   width: 200px;
@@ -5,9 +29,6 @@ body .main-logo {
   margin: 1em auto 0 auto;
   background-image: url('../img/BecoLogo.png');
   background-size: cover;
-}
-body #myCarousel {
-  height: 35em;
 }
 body #myCarousel p {
   color: black;
@@ -39,6 +60,26 @@ body #myCarousel .carousel-indicators li {
   text-indent: 0;
   line-height: 13px;
   border: 2px solid;
+}
+body #myCarousel .carousel-indicators li.active.skyblue {
+  -webkit-box-shadow: 0px 0px 49px 6px #23afe6;
+  -moz-box-shadow: 0px 0px 49px 6px #23afe6;
+  box-shadow: 0px 0px 49px 6px #23afe6;
+}
+body #myCarousel .carousel-indicators li.active.green {
+  -webkit-box-shadow: 0px 0px 49px 6px #00a03e;
+  -moz-box-shadow: 0px 0px 49px 6px #00a03e;
+  box-shadow: 0px 0px 49px 6px #00a03e;
+}
+body #myCarousel .carousel-indicators li.active.red {
+  -webkit-box-shadow: 0px 0px 49px 6px #d42023;
+  -moz-box-shadow: 0px 0px 49px 6px #d42023;
+  box-shadow: 0px 0px 49px 6px #d42023;
+}
+body #myCarousel .carousel-indicators li.active.yellow {
+  -webkit-box-shadow: 0px 0px 49px 6px #f9bc14;
+  -moz-box-shadow: 0px 0px 49px 6px #f9bc14;
+  box-shadow: 0px 0px 49px 6px #f9bc14;
 }
 body #myCarousel span.text-indicator {
   font-size: 11px;
@@ -159,7 +200,7 @@ body .footer {
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
   }
-  body .back {
+  body .nav-back {
     position: absolute;
     top: -41px;
     left: 12%;
@@ -169,7 +210,7 @@ body .footer {
     border-bottom-right-radius: 250px 100px;
     border-bottom-left-radius: 250px 100px;
   }
-  #myCarousel {
+  #myCarousel .item {
     height: 35em;
   }
   #myCarousel .carousel-indicators li {
