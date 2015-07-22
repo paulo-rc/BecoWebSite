@@ -1,11 +1,8 @@
-body .container {
-  width: 65%;
-}
 body .main-logo {
   position: relative;
   width: 200px;
   height: 90px;
-  margin-top: 1em;
+  margin: 1em auto 0 auto;
   background-image: url('../img/BecoLogo.png');
   background-size: cover;
 }
@@ -35,12 +32,12 @@ body #myCarousel .carousel-caption p {
   color: #005cad;
 }
 body #myCarousel .carousel-indicators li {
-  width: 3em;
-  height: 3em;
+  width: 4em;
+  height: 4em;
   background-color: white;
   border-radius: 100%;
   text-indent: 0;
-  line-height: 17px;
+  line-height: 13px;
   border: 2px solid;
 }
 body #myCarousel span.text-indicator {
@@ -54,10 +51,11 @@ body #myCarousel span.age-indicator {
 }
 body .container.head {
   font-size: 12px;
-  width: 85%;
+  width: 100%;
+  padding: 0;
 }
 body .container.head .masthead nav .nav-justified {
-  max-height: 200px;
+  max-height: 245px;
   /*li:first-child {
             a {
               font-size: 11px;
@@ -78,22 +76,19 @@ body .container.head .masthead nav .nav-justified {
           }*/
 }
 body .container.head .masthead nav .nav-justified li {
-  margin: 3px;
+  margin: 0px;
 }
 body .container.head .masthead nav .nav-justified li a {
-  padding-top: 17px;
+  padding-top: 28px;
   padding-bottom: 8px;
   margin-bottom: 0;
   font-weight: bold;
   color: white;
   text-align: center;
-  background-color: #00458A;
-  border: 1px solid white;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  background-color: #00458a;
 }
 body .container.head .masthead nav .nav-justified li a:hover {
-  background-color: #00458A;
+  background-color: #00458a;
 }
 body .container.head .masthead nav .nav-justified .active a,
 body .container.head .masthead nav .nav-justified a:hover,
@@ -145,29 +140,60 @@ body .footer {
   border-top: 1px solid #eee;
 }
 @media (min-width: 768px) {
+  body .main-logo {
+    margin: 1em 0 0 0;
+  }
+  body .container {
+    width: 75%;
+  }
   body .container.head {
     width: 55%;
+  }
+  body .container.head .masthead nav .nav-justified {
+    max-height: 200px;
+  }
+  body .container.head .masthead nav .nav-justified li {
+    margin: 3px;
+  }
+  body .container.head .masthead nav .nav-justified li a {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  body .back {
+    position: absolute;
+    top: -41px;
+    left: 12%;
+    background-color: #00458a;
+    width: 76%;
+    height: 72px;
+    border-bottom-right-radius: 250px 100px;
+    border-bottom-left-radius: 250px 100px;
   }
   #myCarousel {
     height: 35em;
   }
   #myCarousel .carousel-indicators li {
-    width: 6em !important;
-    height: 6em !important;
+    width: 7em !important;
+    height: 7em !important;
     background-color: white;
     border-radius: 100%;
     text-indent: 0;
-    line-height: 17px;
+    line-height: 17px !important;
     border: 10px solid !important;
+    margin: 0 2em 0 0;
+  }
+  #myCarousel .carousel-caption {
+    left: 3%;
+    right: 3%;
   }
   #myCarousel span.text-indicator {
     font-size: inherit !important;
     display: block;
-    padding-top: 4px;
+    padding: 10px !important;
   }
   #myCarousel span.age-indicator {
     font-weight: 900;
-    font-size: 18px;
+    font-size: 29px !important;
   }
 }
 /* Responsive: Portrait tablets and up */
