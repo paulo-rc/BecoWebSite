@@ -1,3 +1,18 @@
+body {
+  overflow: visible !important;
+}
+body #changer {
+  height: auto;
+}
+body #changer .contact-content {
+  padding-top: 3%;
+}
+body #changer .contact-content h1 {
+  margin-top: 0px;
+}
+body .contact-content {
+  width: 100%;
+}
 body .body-top-middle-back {
   position: absolute;
   top: 0;
@@ -15,12 +30,24 @@ body .body-middle-bottom-back {
   height: 40%;
   background-color: lightgray;
   z-index: -2;
+  text-align: center;
   background-color: #aeaeae;
   background: -webkit-gradient(linear, left top, left bottom, from(#aeaeae), to(white));
   background: -webkit-linear-gradient(top, #aeaeae, white);
   background: -moz-linear-gradient(top, #aeaeae, white);
   background: -ms-linear-gradient(top, #aeaeae, white);
   background: -o-linear-gradient(top, #aeaeae, white);
+}
+body .slogan-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+body .slogan-container .slogan {
+  width: 50%;
+  height: auto;
 }
 body .main-logo {
   position: relative;
@@ -33,12 +60,22 @@ body .main-logo {
 body #myCarousel p {
   color: black;
 }
+body #myCarousel .first-slide {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  min-width: 100%;
+  height: 15em;
+}
+body #myCarousel .item {
+  height: 32em;
+}
 body #myCarousel .carousel-caption {
   top: 15px;
   bottom: 0px;
   text-align: left;
   color: #005cad;
-  padding-top: 0px;
+  padding-top: 2%;
   text-shadow: none;
 }
 body #myCarousel .carousel-caption h1 {
@@ -52,6 +89,11 @@ body #myCarousel .carousel-caption h2 {
 body #myCarousel .carousel-caption p {
   color: #005cad;
 }
+body #myCarousel .carousel-indicators {
+  width: 100%;
+  margin-left: 0;
+  left: 0;
+}
 body #myCarousel .carousel-indicators li {
   width: 4em;
   height: 4em;
@@ -62,24 +104,24 @@ body #myCarousel .carousel-indicators li {
   border: 2px solid;
 }
 body #myCarousel .carousel-indicators li.active.skyblue {
-  -webkit-box-shadow: 0px 0px 49px 6px #23afe6;
-  -moz-box-shadow: 0px 0px 49px 6px #23afe6;
-  box-shadow: 0px 0px 49px 6px #23afe6;
+  -webkit-box-shadow: 0px 0px 17px 0px #23afe6;
+  -moz-box-shadow: 0px 0px 17px 0px #23afe6;
+  box-shadow: 0px 0px 17px 0px #23afe6;
 }
 body #myCarousel .carousel-indicators li.active.green {
-  -webkit-box-shadow: 0px 0px 49px 6px #00a03e;
-  -moz-box-shadow: 0px 0px 49px 6px #00a03e;
-  box-shadow: 0px 0px 49px 6px #00a03e;
+  -webkit-box-shadow: 0px 0px 17px 0px #00a03e;
+  -moz-box-shadow: 0px 0px 17px 0px #00a03e;
+  box-shadow: 0px 0px 17px 0px #00a03e;
 }
 body #myCarousel .carousel-indicators li.active.red {
-  -webkit-box-shadow: 0px 0px 49px 6px #d42023;
-  -moz-box-shadow: 0px 0px 49px 6px #d42023;
-  box-shadow: 0px 0px 49px 6px #d42023;
+  -webkit-box-shadow: 0px 0px 17px 0px #d42023;
+  -moz-box-shadow: 0px 0px 17px 0px #d42023;
+  box-shadow: 0px 0px 17px 0px #d42023;
 }
 body #myCarousel .carousel-indicators li.active.yellow {
-  -webkit-box-shadow: 0px 0px 49px 6px #f9bc14;
-  -moz-box-shadow: 0px 0px 49px 6px #f9bc14;
-  box-shadow: 0px 0px 49px 6px #f9bc14;
+  -webkit-box-shadow: 0px 0px 17px 0px #f9bc14;
+  -moz-box-shadow: 0px 0px 17px 0px #f9bc14;
+  box-shadow: 0px 0px 17px 0px #f9bc14;
 }
 body #myCarousel span.text-indicator {
   font-size: 11px;
@@ -120,7 +162,7 @@ body .container.head .masthead nav .nav-justified li {
   margin: 0px;
 }
 body .container.head .masthead nav .nav-justified li a {
-  padding-top: 28px;
+  padding-top: 12px;
   padding-bottom: 8px;
   margin-bottom: 0;
   font-weight: bold;
@@ -149,6 +191,25 @@ body .container.head .masthead nav ul > li .border-red {
 }
 body .container.head .masthead nav ul > li .border-skyblue {
   border-bottom: 4px solid skyblue;
+}
+body .container.head .masthead nav ul > li .border-green.active {
+  box-shadow: 0px 0px 13px 1px green;
+  z-index: 1;
+}
+body .container.head .masthead nav ul > li .border-skyblue.active {
+  box-shadow: 0px 0px 13px 1px skyblue;
+  z-index: 1;
+}
+body .container.head .masthead nav ul > li .border-yellow.active {
+  box-shadow: 0px 0px 13px 1px yellow;
+  z-index: 1;
+}
+body .container.head .masthead nav ul > li .border-red.active {
+  box-shadow: 0px 0px 13px 1px red;
+  z-index: 1;
+}
+body .dark-skyblue-text {
+  color: #23afe6;
 }
 body .skyblue-text {
   color: skyblue;
@@ -180,9 +241,14 @@ body .footer {
   margin-top: 40px;
   border-top: 1px solid #eee;
 }
+@media (max-width: 768px) {
+  #myCarousel {
+    height: 41em !important;
+  }
+}
 @media (min-width: 768px) {
   body .main-logo {
-    margin: 1em 0 0 0;
+    margin: 2em 0 0 0;
   }
   body .container {
     width: 75%;
@@ -197,6 +263,7 @@ body .footer {
     margin: 3px;
   }
   body .container.head .masthead nav .nav-justified li a {
+    padding-top: 28px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
   }
@@ -211,7 +278,7 @@ body .footer {
     border-bottom-left-radius: 250px 100px;
   }
   #myCarousel .item {
-    height: 35em;
+    height: 20em !important;
   }
   #myCarousel .carousel-indicators li {
     width: 7em !important;
@@ -222,6 +289,26 @@ body .footer {
     line-height: 17px !important;
     border: 10px solid !important;
     margin: 0 2em 0 0;
+  }
+  #myCarousel .carousel-indicators li.active.skyblue {
+    -webkit-box-shadow: 0px 0px 49px 6px #23afe6 !important;
+    -moz-box-shadow: 0px 0px 49px 6px #23afe6 !important;
+    box-shadow: 0px 0px 49px 6px #23afe6 !important;
+  }
+  #myCarousel .carousel-indicators li.active.green {
+    -webkit-box-shadow: 0px 0px 49px 6px #00a03e !important;
+    -moz-box-shadow: 0px 0px 49px 6px #00a03e !important;
+    box-shadow: 0px 0px 49px 6px #00a03e !important;
+  }
+  #myCarousel .carousel-indicators li.active.red {
+    -webkit-box-shadow: 0px 0px 49px 6px #d42023 !important;
+    -moz-box-shadow: 0px 0px 49px 6px #d42023 !important;
+    box-shadow: 0px 0px 49px 6px #d42023 !important;
+  }
+  #myCarousel .carousel-indicators li.active.yellow {
+    -webkit-box-shadow: 0px 0px 49px 6px #f9bc14 !important;
+    -moz-box-shadow: 0px 0px 49px 6px #f9bc14 !important;
+    box-shadow: 0px 0px 49px 6px #f9bc14 !important;
   }
   #myCarousel .carousel-caption {
     left: 3%;
@@ -258,11 +345,6 @@ body .footer {
 }
 .spinner7 .circ4 {
   background-color: green;
-}
-.logo {
-  position: fixed;
-  min-width: 280px;
-  max-width: 380px;
 }
 .bubble {
   width: 100px;

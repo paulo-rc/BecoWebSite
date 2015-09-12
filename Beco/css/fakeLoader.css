@@ -469,6 +469,12 @@ body { overflow: hidden }
       }
     }
 
+    .logo {
+        position: fixed;
+        min-width: 280px;
+        max-width: 380px;
+    }
+
     @media (max-width: 768px){
       .logo{
         min-width: 100px;
